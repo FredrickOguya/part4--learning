@@ -22,7 +22,6 @@ mongoose
 
 app.use(express.static('dist'))
 app.use(express.json())
-app.use(middleware.requestLogger)
 
 app.use('/api/login',loginRouter)
 app.use('/api/notes', notesRouter)
